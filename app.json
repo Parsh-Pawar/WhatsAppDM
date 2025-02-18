@@ -1,41 +1,39 @@
 {
   "expo": {
-    "name": "WhatsAppDM",
-    "slug": "WhatsAppDM",
+    "name": "WhatsApp DM",
+    "slug": "WhatsAppMe",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "icon": "./app/assets/whatsAppMeIcon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./app/assets/SplashLogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./app/assets/whatsAppMeIcon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.abbaskahn0501.WhatsAppMe"
     },
     "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./app/assets/whatsAppMeIcon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a5588577-d892-4d69-a587-d81d6aaf92b8"
+      }
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
+      "expo-font"
+    ]
   }
 }
